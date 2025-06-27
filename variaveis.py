@@ -30,3 +30,61 @@ a = 40
 c = 3
 r = a*c
 print(r)
+
+
+import json
+resp = {
+          "children": [
+            {
+              "name": "E-Farsas",
+              "type": "url",
+              "url": "https://www.e-farsas.com/"
+            },
+            {
+              "name": "G1 Fato ou Fake",
+              "type": "url",
+              "url": "https://g1.globo.com/fato-ou-fake/"
+            },
+            {
+              "name": "Boatos.Org",
+              "type": "url",
+              "url": "https://www.boatos.org/"
+            },
+            {
+              "name": "Estadão Verifica",
+              "type": "url",
+              "url": "https://politica.estadao.com.br/blogs/estadao-verifica/"
+            },
+            {
+              "name": "Aos Fatos",
+              "type": "url",
+              "url": "https://www.aosfatos.org/"
+            },
+            {
+              "name": "Lupa",
+              "type": "url",
+              "url": "https://piaui.folha.uol.com.br/lupa/"
+            },
+            {
+              "name": "Comprova",
+              "type": "url",
+              "url": "https://noticias.uol.com.br/comprova/"
+            },
+            {
+              "name": "O Truco",
+              "type": "url",
+              "url": "https://apublica.org/checagem/"
+            }
+          ],
+          "name": "Checagem de Fake News",
+          "type": "folder"
+        }
+
+print('===========')
+
+first = json.dumps(resp)
+lista = list(resp.keys())
+print(lista)
+x = lista[0]
+print(x)
+print(type(resp))

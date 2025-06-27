@@ -36,4 +36,4 @@ print(alcalinos)
 
 # criar nova tupla com elementos ordenados
 print(sorted(alcalinos))
-#print(alcalinos.sort()) -> erro
+# print(alcalinos.sort()) -> erro
